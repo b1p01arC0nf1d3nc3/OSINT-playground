@@ -51,7 +51,53 @@ def hello_user(name):
 #the root starts in /template/, which will be similar for /static/   
 @app.route("/")
 def homepage():
-   return render_template('homepageindex.html')
+   return render_template('homepage/homepageindex.html')
+
+@app.route("/challenges")
+def challenges():
+   return render_template('homepage/challenges.html')
+
+#challenge room routes
+@app.route("/challenges/1")
+def challenge1():
+   return render_template('homepage/challenges/1.html')
+@app.route("/challenges/2")
+def challenge2():
+   return render_template('homepage/challenges/2.html')
+@app.route("/challenges/3")
+def challenge3():
+   return render_template('homepage/challenges/3.html')
+@app.route("/challenges/4")
+def challenge4():
+   return render_template('homepage/challenges/4.html')
+@app.route("/challenges/5")
+def challenge5():
+   return render_template('homepage/challenges/5.html')
+@app.route("/challenges/6")
+def challenge6():
+   return render_template('homepage/challenges/6.html')
+@app.route("/challenges/7")
+def challenge7():
+   return render_template('homepage/challenges/7.html')
+@app.route("/challenges/8")
+def challenge8():
+   return render_template('homepage/challenges/8.html')
+@app.route("/challenges/9")
+def challenge9():
+   return render_template('homepage/challenges/9.html')
+@app.route("/challenges/10")
+def challenge10():
+   return render_template('homepage/challenges/10.html')
+
+
+@app.route("/sites")
+def sites():
+   return render_template('homepage/sites.html')
+
+@app.route("/tools")
+def tools():
+   return render_template('homepage/tools.html')
+   
 
 if __name__=='__main__': 
     app.run()
