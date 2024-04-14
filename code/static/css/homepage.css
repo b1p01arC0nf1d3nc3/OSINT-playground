@@ -61,10 +61,21 @@ that define a menucontainer and the list and links within. The a is global so wo
 p {
     padding: 10px;
     margin-left: 10px;
+    margin-right: 25%;
 }
 h1 {
     padding: 10px;
     margin-left: 10px;
+}
+
+h2 {
+  padding: 10px;
+  margin-left: 10px;
+  color: rgba(255, 81, 0, 0.828);
+}
+
+a{
+  color: #ff5100d3
 }
 
 /*footer classes*/
@@ -261,4 +272,13 @@ h1 {
       display: block;
       margin-bottom: 20px;
     }
+  }
+
+  .article-img{
+    display: center;
+    height: 75%;
+    width: 75%;
+    border: 2px solid rgba(255, 81, 0, 0.828);
+    background-color: white;
+    margin-left: 25px;
   }

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instasham</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/instasham.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+      <!-- nav bar goes here-->
+      <nav class="navbar">
+        <img src="{{ url_for('static', filename='images/instasham/icon.png') }}" class="logo">
+        <form>
+          <input type="text" placeholder="search here" name="search-query" id="search-input">
+          <button class="search-btn" type="submit"><img src="{{ url_for('static', filename='images/instasham/search.png') }}" class="search-icon"></button>
+        </form>
+        <div class="nav-links">
+          <a href="#" class="nav-links"><img src="{{ url_for('static', filename='images/instasham/home-fill.png') }}" class="nav-icon"></a>
+          <div class="activity-log">
+            <img src="{{ url_for('static', filename='images/instasham/heart-nofill.png') }}" class="nav-icon">
+            <div class="activity-container hide">
+              <div class="activity-card">
+                <img src="{{ url_for('static', filename='images/instasham/users/user1.jpeg') }}" class="user-img">
+                <p class="activity"><b>@Eirik</b> liked your post</p>
+                <img src="{{ url_for('static', filename='images/instasham/posts/post1.jpg') }}" class="user-img">
+              </div>
+              <div class="activity-card">
+                <img src="{{ url_for('static', filename='images/instasham/users/user2.jpeg') }}" class="user-img">
+                <p class="activity"><b>@Sally123</b> liked your post</p>
+                <img src="{{ url_for('static', filename='images/instasham/posts/post1.jpg') }}" class="user-img">
+              </div>
+              <div class="activity-card">
+                <img src="{{ url_for('static', filename='images/instasham/users/user3.jpeg') }}" class="user-img">
+                <p class="activity"><b>@Ryan</b> liked your post</p>
+                <img src="{{ url_for('static', filename='images/instasham/posts/post1.jpg') }}" class="user-img">
+              </div>
+            </div>  
+          </div>
+          
+          <a href="#" class="nav-links"><img src="{{ url_for('static', filename='images/instasham/add-button.png') }}" class="nav-icon"></a>
+          <a href="#" class="nav-links"><img src="{{ url_for('static', filename='images/instasham/sample-profile.webp') }}" class="nav-icon user-profile"></a>
+
+
+      </nav>
+
+      <!-- main section -->
+      <section class="main">
+        <!-- post section -->
+        <div class="post-container">
+          <div class="post">
+            <div class="post-header">
+              <img src="{{ url_for('static', filename='images/instasham/users/user1.jpeg') }}" class="user-icon">
+              <p class="username">@Eirik</p>
+            </div>
+            <div class="post-feed">
+              <div class="post-overlays">
+                <img src="{{ url_for('static', filename='images/instasham/red-heart.png') }}" class="like-icon">
+                <div class="share-window">
+                  <h1 class="title">Share the post with others</h1>
+                  <div class="share-link-container">
+                    <input type="text" id="share-link" value="https://www.google.ca/example" disabled>
+                    <button class="copy-btn">copy</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="post-img-container">
+                <img src="{{ url_for('static', filename='images/instasham/posts/post1.jpg') }}">
+              </div>
+            </div>
+            <div class="post-detail">
+              <div class="detail-intracables">
+                <img src="{{ url_for('static', filename='images/instasham/heart-nofill.png') }}" class="like-btn">
+                <img src="{{ url_for('static', filename='images/instasham/send-nofill.png') }}" class="send-btn">
+                <img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}" class="comment-btn">
+              </div>
+              <span class="likes">2.3k likes</span>
+              <p class="username">@Eirik</p>
+              <p class="post-des">Oh wow, did you see that Corvette that just rolled by? I mean, talk about love at first rev! The sleek lines, the purr of the engine, it's like poetry in motion. I swear, if cars could make hearts flutter, that Corvette just stole mine. I think I need a moment to compose myself before I start drooling over it. 🚗😍</p>
+
+              <div class="comment-box">
+                <input type="text" id="comment-input" placeholder="Add an awesome comment everyone will love...">
+                <button class="add-comment-btn"><img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}">
+              </div>
+
+              <span class="comment-count">243 comments</span>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post-header">
+              <img src="{{ url_for('static', filename='images/instasham/users/user3.jpeg') }}" class="user-icon">
+              <p class="username">@Ryan</p>
+            </div>
+            <div class="post-feed">
+              <div class="post-overlays">
+                <img src="{{ url_for('static', filename='images/instasham/red-heart.png') }}" class="like-icon">
+                <div class="share-window">
+                  <h1 class="title">Share the post with others</h1>
+                  <div class="share-link-container">
+                    <input type="text" id="share-link" value="https://www.google.ca/example" disabled>
+                    <button class="copy-btn">copy</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="post-img-container">
+                <img src="{{ url_for('static', filename='images/instasham/posts/post2.jpeg') }}">
+              </div>
+            </div>
+            <div class="post-detail">
+              <div class="detail-intracables">
+                <img src="{{ url_for('static', filename='images/instasham/heart-nofill.png') }}" class="like-btn">
+                <img src="{{ url_for('static', filename='images/instasham/send-nofill.png') }}" class="send-btn">
+                <img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}" class="comment-btn">
+              </div>
+              <span class="likes">0.1k likes</span>
+              <p class="username">@Ryan</p>
+              <p class="post-des">Wrestling is an art ordained by the gods! I will fight you if you think otherwise.</p>
+
+              <div class="comment-box">
+                <input type="text" id="comment-input" placeholder="Add an awesome comment everyone will love...">
+                <button class="add-comment-btn"><img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}">
+              </div>
+
+              <span class="comment-count">2 comments</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- right section-->
+        <div class="user-about-section">
+          <div class="user-info">
+            <img src="{{ url_for('static', filename='images/instasham/users/user2.jpeg') }}" class="user-dp">
+            <div class="info-container">
+              <h1 class="name">Sally123</h1>
+              <p>Sassy Sally here, mixing sass with class in equal measure. Tech wizard by day, Netflix binger by night. Constantly challenging the status quo with a wink and a smile. Let's code some mischief! 💻😉</p>
+            </div>
+        </div> 
+        <h1 class="suggestion-heading">suggestions</h1> 
+        <div class="suggestion-container">
+          <div class="user-card">
+            <img src="{{ url_for('static', filename='images/instasham/users/user3.jpeg') }}" class="user-dp">
+            <p class="username">@Ryan</p>
+            <button class="follow-btn">follow</button>
+          </div>
+          <div class="user-card">
+            <img src="{{ url_for('static', filename='images/instasham/users/user4.jpeg') }}" class="user-dp">
+            <p class="username">@Jessica</p>
+            <button class="follow-btn">follow</button>
+          </div>
+          <div class="user-card">
+            <img src="{{ url_for('static', filename='images/instasham/users/user5.jpeg') }}" class="user-dp">
+            <p class="username">@Leanne</p>
+            <button class="follow-btn">follow</button>
+          </div>
+        </div>          
+      </section>
+
+      <script src="{{ url_for('static', filename='js/post.js') }}"></script>
+
+
+
+  </body>
+</html>

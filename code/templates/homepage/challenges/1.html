@@ -20,12 +20,35 @@
  </div>
 
  <h1>Challenge 1</h1>
- <p>Placeholder content for challenge description</p>
+ <h2>Connecting Accounts Based on Activity</h2>
+ <p>As part of an OSINT investigation, it is common for the investigator to try and link accounts. This can be achieved in a variety of ways, such as identifying common usernames on different platforms, correlating common posts across accounts that may not initially seem to be connected, and enumerating email addresses to find accounts on less common sites.</p>
+ <p>Beyond these more manual forms of enumeration, tools such as Maltego and SpiderFoot can be used to scrape a wide range of sites and return information on a target. Links to these tools can be found on the <a href="/tools">'Tools'</a> page.</p>
+ <p></p>
+ <h2>Target</h2>
+ <p>In this challenge, you will need to connect various accounts based on their activity on two sites: Instasham (a fake social media platform) and fauXtube (a mock video sharing site).</p>
+ <p>It is recommended to take notes on key findings and information you gather. You could use Obsidian, OneNote, or even Notepad to organize the information and gradually collect correlating identifiers. This challenge has no set end point and is intended to act as a simple starter environment to practice the initial phases of information gathering.</p>
+ <p></p>
+ <h2>How to Investigate Accounts</h2>
+ <p>One of the first steps of an investigation is to map out the online presence of the target. This includes analyzing their activity on social media accounts and trying to find where else they may be using the same username.</p>
+ <p>A common tool used for this purpose is Maltego, which is capable of connecting information to a provided target, or entity. The tool uses functions called transforms to attempt to identify interesting and relevant correlations. This could be email addresses for a given domain, finding the location of an IP address using whois data, or scraping common websites for a given username.</p>
+ <img src="{{ url_for('static', filename='images/homepage/maltego.png') }}" class="article-img" alt="Example image of a Maltego graph show interrelations.">
+ <p>In this challenge, you will perform the investigation manually and try to identify accounts owned by the same user. This can be identified by use of the same username (though this may not be proof in and of itself, especially if the name is more common), identical or very similar profile photos/information, or posts on similar topics across multiple platforms. Keep these in mind as you browse the mock sites found on the <a href="/sites">'Sites'</a> page and try to identify as many linked accounts as possible.</p>
+ <p></p>
+ <h2>Solution</h2>
+ <p>If you want to verify that you found some relevant information after completing your investigation, click here to reveal the connections.</p>
+ <details>
+   <summary>Click to reveal.</summary>
+   <img src="{{ url_for('static', filename='images/homepage/no-soup.gif') }}" class="article-img" alt="Sorry boss, no soup.">
+   <p>No soup for you.</p>
+ </details>
+
+ <h2>Future Automation</h2>
+ <p>It is hoped that automation tools will be integrated in the creation of this challenge to provide a unique environment each time the OSINT playground container is stood up. Look for updates to the project at the GitHub repository linked at the bottom of the page.</p>
+
 
  <div class="footer">
-   <a href="/">Github repo</a>
-   <a href="/">Link2</a>
-   <a href="/">Link3</a>
+   <a href="https://github.com/b1p01arC0nf1d3nc3/OSINT-playground">Project Repo</a>
+   <a href="https://github.com/b1p01arC0nf1d3nc3/">b1p01arC0nf1d3nc3</a>
 </div>
 
 </html>

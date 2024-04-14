@@ -1,4 +1,3 @@
-# an object of WSGI application 
 import os
 import json
 from urllib.parse import urlparse
@@ -11,15 +10,24 @@ app = Flask(__name__) # Flask constructor
 #-----------------------------------------------------------------------
 # A decorator used to tell the application 
 # which URL is associated function 
-@app.route('/instasham')
+@app.route('/instasham/')
 def instasham():
-    return 'instasham will go here.'
+    return render_template('/instasham/instashamindex.html')
+
+#example post page
+@app.route('/instasham/post1')
+def instashamPost1():
+   return render_template('/instasham/instapost.html')
+
+@app.route('/instasham/user1')
+def instashameUser1():
+   return render_template('instasham/instauser1.html')
 
 
 #the below dynamically adds the user to url and adds it in output
-@app.route('/instasham/user/<name>')
-def instashamUsers(name):
-    return 'Hello %s. Welcome to Instasham.' % name
+#@app.route('/instasham/user/<name>')
+#def instashamUsers(name):
+#    return 'Hello %s. Welcome to Instasham.' % name
 
 
 #-----------------------------------------------------------------------
@@ -28,22 +36,70 @@ def instashamUsers(name):
 @app.route('/fauxtube')  #decorator for route(argument) function 
 def fauxtube():     #binding to fauxtube call
    #returning the specific html index page.
-   return render_template('/fauxtube/fauxtubeindex.html')    
+   return render_template('/fauxtube/fauxtubeindex.html')
+
+@app.route('/fauxtube/vid1')   
+def fauxtubevid1():
+   #returns the html for vid1
+   return render_template('fauxtube/vid1.html')
+
+@app.route('/fauxtube/vid2')   
+def fauxtubevid2():
+   #returns the html for vid1
+   return render_template('fauxtube/vid2.html') 
+
+@app.route('/fauxtube/vid4')   
+def fauxtubevid4():
+   #returns the html for vid1
+   return render_template('fauxtube/vid4.html') 
+
+@app.route('/fauxtube/vid5')   
+def fauxtubevid5():
+   #returns the html for vid1
+   return render_template('fauxtube/vid5.html') 
+
+@app.route('/fauxtube/vid6')   
+def fauxtubevid6():
+   #returns the html for vid1
+   return render_template('fauxtube/vid6.html') 
+
+@app.route('/fauxtube/vid7')   
+def fauxtubevid7():
+   #returns the html for vid1
+   return render_template('fauxtube/vid7.html') 
+
+@app.route('/fauxtube/vid8')   
+def fauxtubevid8():
+   #returns the html for vid1
+   return render_template('fauxtube/vid8.html') 
+
+@app.route('/fauxtube/vid9')   
+def fauxtubevid9():
+   #returns the html for vid1
+   return render_template('fauxtube/vid9.html') 
+
+@app.route('/fauxtube/vid10')   
+def fauxtubevid10():
+   #returns the html for vid1
+   return render_template('fauxtube/vid10.html') 
+
+@app.route('/fauxtube/vid11')   
+def fauxtubevid11():
+   #returns the html for vid1
+   return render_template('fauxtube/vid11.html') 
+
+@app.route('/fauxtube/vid12')   
+def fauxtubevid12():
+   #returns the html for vid1
+   return render_template('fauxtube/vid12.html')  
+
+@app.route('/fauxtube/<string:youtube_video_id>')
+def video_page(youtube_video_id):
+   return render_template('fauxtube/vid.html', youtube_video_id=youtube_video_id)
   
 
-@app.route('/guest/<guest>') 
-def hello_guest(guest):    #binding to hello_guest call 
-   return 'Hello %s as Guest' % guest 
 
-#the function below will take in a username and redirect it  
-@app.route('/user/<name>') 
-def hello_user(name):     
-   if name =='admin':  #dynamic binding of URL to function 
-      return redirect(url_for('hello_admin'))   
-   else: 
-      return redirect(url_for('hello_guest', guest = name))
    
-
 #-----------------------------------------------------------------------
 # homepage/challenges
 #-----------------------------------------------------------------------   
