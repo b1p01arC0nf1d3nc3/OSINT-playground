@@ -10,10 +10,16 @@ The environment can be installed and run in two ways:
 - cloning the repo and then running the `app.py` file using python in a terminal
 
 ### Docker
-Details to follow.
+Docker should already be installed before attempting the following steps. You can find install instructions [here]([https://link-url-here.org](https://docs.docker.com/engine/install/)) if you do not currently have Docker installed.
+-Clone the repo: `git clone https://github.com/b1p01arC0nf1d3nc3/OSINT-playground/`
+-Change into the `OSINT-playground` directory
+-Run `sudo docker image build -t playground .`
+-Run `sudo docker run -d -p 5000:5000 playground`
+The homepage should now be accessible at `localhost:5000`.
 
 ### Cloning the repo
-If you choose to clone the repo, the `app.py` file can be found in the `code` directory. Simply open a terminal, change directory to the `code` directory, and then run the tool. Note: You may be required to install Flask if you have not already done so. This can be done by using `pip install -r requirements.txt` from within the `code` directory.
+If you choose to clone the repo and run the python application directly, the `app.py` file can be found in the `code` directory. Simply open a terminal, change directory to the `code` directory, and then run the tool using `python app.py`. Note: You may be required to install Flask if you have not already done so. This can be done by using `pip install -r requirements.txt` from within the `code` directory.
+
 
 ## How to Use OSINT-playground
 
