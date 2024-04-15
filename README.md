@@ -11,10 +11,10 @@ The environment can be installed and run in two ways:
 
 ### Docker
 Docker should already be installed before attempting the following steps. You can find install instructions [here]([https://link-url-here.org](https://docs.docker.com/engine/install/)) if you do not currently have Docker installed.
--Clone the repo: `git clone https://github.com/b1p01arC0nf1d3nc3/OSINT-playground/`
--Change into the `OSINT-playground` directory
--Run `sudo docker image build -t playground .`
--Run `sudo docker run -d -p 5000:5000 playground`
+- Clone the repo: `git clone https://github.com/b1p01arC0nf1d3nc3/OSINT-playground/`
+- Change into the `OSINT-playground` directory
+- Run `sudo docker image build -t playground .`
+- Run `sudo docker run -d -p 5000:5000 playground`
 The homepage should now be accessible at `localhost:5000`.
 
 ### Cloning the repo
