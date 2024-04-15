@@ -25,7 +25,7 @@
             <div class="activity-container hide">
               <div class="activity-card">
                 <img src="{{ url_for('static', filename='images/instasham/users/user1.jpeg') }}" class="user-img">
-                <p class="activity"><b>@Eirik</b> liked your post</p>
+                <p class="activity"><a href="/instasham/user1"><b>@Eirik</b></a> liked your post</p>
                 <img src="{{ url_for('static', filename='images/instasham/posts/post1.jpg') }}" class="user-img">
               </div>
               <div class="activity-card">
@@ -54,7 +54,7 @@
           <div class="post">
             <div class="post-header">
               <img src="{{ url_for('static', filename='images/instasham/users/user1.jpeg') }}" class="user-icon">
-              <p class="username">@Eirik</p>
+              <p class="username"><a href="/instasham/user1">@Eirik</a></p>
             </div>
             <div class="post-feed">
               <div class="post-overlays">
@@ -132,6 +132,133 @@
               <span class="comment-count">2 comments</span>
             </div>
           </div>
+
+          <div class="post">
+            <div class="post-header">
+              <img src="{{ url_for('static', filename='images/instasham/users/user4.jpeg') }}" class="user-icon">
+              <p class="username">@Jessica</p>
+            </div>
+            <div class="post-feed">
+              <div class="post-overlays">
+                <img src="{{ url_for('static', filename='images/instasham/red-heart.png') }}" class="like-icon">
+                <div class="share-window">
+                  <h1 class="title">Share the post with others</h1>
+                  <div class="share-link-container">
+                    <input type="text" id="share-link" value="https://www.google.ca/example" disabled>
+                    <button class="copy-btn">copy</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="post-img-container">
+                <img src="{{ url_for('static', filename='images/instasham/posts/post3.jpg') }}">
+              </div>
+            </div>
+            <div class="post-detail">
+              <div class="detail-intracables">
+                <img src="{{ url_for('static', filename='images/instasham/heart-nofill.png') }}" class="like-btn">
+                <img src="{{ url_for('static', filename='images/instasham/send-nofill.png') }}" class="send-btn">
+                <img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}" class="comment-btn">
+              </div>
+              <span class="likes">0.7k likes</span>
+              <p class="username">@Jessica</p>
+              <p class="post-des">There's nothing in life that excites me more than FREEDOM. And that's what crypto represents! #cryptoQueens</p>
+
+              <div class="comment-box">
+                <input type="text" id="comment-input" placeholder="Add an awesome comment everyone will love...">
+                <button class="add-comment-btn"><img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}">
+              </div>
+
+              <span class="comment-count">5 comments</span>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post-header">
+              <img src="{{ url_for('static', filename='images/instasham/users/user5.jpeg') }}" class="user-icon">
+              <p class="username">@Leanne</p>
+            </div>
+            <div class="post-feed">
+              <div class="post-overlays">
+                <img src="{{ url_for('static', filename='images/instasham/red-heart.png') }}" class="like-icon">
+                <div class="share-window">
+                  <h1 class="title">Share the post with others</h1>
+                  <div class="share-link-container">
+                    <input type="text" id="share-link" value="https://www.google.ca/example" disabled>
+                    <button class="copy-btn">copy</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="post-img-container">
+                <img src="{{ url_for('static', filename='images/instasham/posts/post4.jpg') }}">
+              </div>
+            </div>
+            <div class="post-detail">
+              <div class="detail-intracables">
+                <img src="{{ url_for('static', filename='images/instasham/heart-nofill.png') }}" class="like-btn">
+                <img src="{{ url_for('static', filename='images/instasham/send-nofill.png') }}" class="send-btn">
+                <img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}" class="comment-btn">
+              </div>
+              <span class="likes">3.4k likes</span>
+              <p class="username">@Leanne</p>
+              <p class="post-des">First flight in an hour! OMG!!!!! SO excited!!!!!!!</p>
+
+              <div class="comment-box">
+                <input type="text" id="comment-input" placeholder="Add an awesome comment everyone will love...">
+                <button class="add-comment-btn"><img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}">
+              </div>
+
+              <span class="comment-count">4 comments</span>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post-header">
+              <img src="{{ url_for('static', filename='images/instasham/users/user2.jpeg') }}" class="user-icon">
+              <p class="username">@Sally</p>
+            </div>
+            <div class="post-feed">
+              <div class="post-overlays">
+                <img src="{{ url_for('static', filename='images/instasham/red-heart.png') }}" class="like-icon">
+                <div class="share-window">
+                  <h1 class="title">Share the post with others</h1>
+                  <div class="share-link-container">
+                    <input type="text" id="share-link" value="https://www.google.ca/example" disabled>
+                    <button class="copy-btn">copy</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="post-img-container">
+                <img src="{{ url_for('static', filename='images/instasham/posts/post5.jpg') }}">
+              </div>
+            </div>
+            <div class="post-detail">
+              <div class="detail-intracables">
+                <img src="{{ url_for('static', filename='images/instasham/heart-nofill.png') }}" class="like-btn">
+                <img src="{{ url_for('static', filename='images/instasham/send-nofill.png') }}" class="send-btn">
+                <img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}" class="comment-btn">
+              </div>
+              <span class="likes">2.8k likes</span>
+              <p class="username">@Sally</p>
+              <p class="post-des">Generate passive income by following these three simple steps! Don't miss out join now!!!!! <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Sign up here.</a></p>
+
+              <div class="comment-box">
+                <input type="text" id="comment-input" placeholder="Add an awesome comment everyone will love...">
+                <button class="add-comment-btn"><img src="{{ url_for('static', filename='images/instasham/comment-nofill.png') }}">
+              </div>
+
+              <span class="comment-count">11 comments</span>
+            </div>
+          </div>
+
+
+
+          
         </div>
 
         <!-- right section-->
