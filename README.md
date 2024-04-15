@@ -6,8 +6,8 @@ This project is being undertaken as part of a capstone course and will be focuse
 ## Installation
 
 The environment can be installed and run in two ways:
-- using Docker
-- cloning the repo and then running the `app.py` file using python in a terminal
+- Using Docker
+- Cloning the repo and then running the `app.py` file using python in a terminal
 
 ### Docker
 Docker should already be installed before attempting the following steps. You can find install instructions [here]([https://link-url-here.org](https://docs.docker.com/engine/install/)) if you do not currently have Docker installed.
