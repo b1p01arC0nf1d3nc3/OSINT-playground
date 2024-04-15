@@ -3,6 +3,8 @@ Welcome to OSINT-playground! A training environment to help learn about open sou
 
 This project is being undertaken as part of a capstone course and will be focused on developing a self-contained learning environment that can help demonstrate not just the importance of protecting yourself online, but also tools and techniques used in the field of OSINT.
 
+![Challenge selection page.](menu1.png)
+
 ## Installation
 
 The environment can be installed and run in two ways:
@@ -25,6 +27,8 @@ If you choose to clone the repo and run the python application directly, the `ap
 
 Once up and running, navigate to localhost:5000 in a web browser to be taken to the homepage. Here, a more detailed description of the tool and the available challenges is provided.
 
-In essence, the tool provides a range of mock websites that mimic various types of websites that would be used in an investigation. Currently, only two prototypes are available (fauXtube, a mock version of YouTube, and Instasham, a mock version of Instagram).
+In essence, the tool provides a range of mock websites that mimic various types of websites that would be used in an investigation. Currently, only two prototypes are available (fauXtube, a mock version of YouTube, and Instasham, a mock version of Instagram). The `Challenges` page allows users to select which investigation to try, while the `Tools` page provides a list of useful sites/utilities.
 
 If you want to explore the different mock sites, navigate to the 'Sites' page, which presents cards that will redirect you to the relevant site.
+
+![Site directory page.](menu2.png)
