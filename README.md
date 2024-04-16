@@ -12,7 +12,7 @@ The environment can be installed and run in two ways:
 - Cloning the repo and then running the `app.py` file using python in a terminal
 
 ### Docker 🐳
-Docker should already be installed before attempting the following steps. You can find install instructions [here]([https://link-url-here.org](https://docs.docker.com/engine/install/)) if you do not currently have Docker installed.
+Docker should already be installed before attempting the following steps. You can find install instructions [here](https://docs.docker.com/engine/install/) if you do not currently have Docker installed.
 - Clone the repo: `git clone https://github.com/b1p01arC0nf1d3nc3/OSINT-playground/`
 - Change into the `OSINT-playground` directory
 - Run `sudo docker image build -t playground .`
